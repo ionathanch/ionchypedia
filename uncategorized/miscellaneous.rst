@@ -24,6 +24,7 @@ Run :powershell:`chcp.com 65001`. See `here <https://ss64.com/nt/chcp.html>`__ f
 Syntax highlighting in MediaWiki
 --------------------------------
 Template: ``<syntaxhighlight lang="" inline></syntaxhighlight>``
+
 See `here <https://www.mediawiki.org/wiki/Extension:SyntaxHighlight>`__
 for more details and `here <http://pygments.org/docs/lexers/>`__
 for a list of supported languages.
