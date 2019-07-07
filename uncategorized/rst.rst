@@ -22,7 +22,9 @@ Inline code snippets look like ````this````.
 
 Highlighted
 ^^^^^^^^^^^
-To highlight an inline snippet in, for instance, Bash, register a new role: ::
+To highlight an inline snippet in, for instance, Bash, register a new role:
+
+.. code:: rst
 
   .. role:: bash(code)
     :language: bash
@@ -30,6 +32,8 @@ To highlight an inline snippet in, for instance, Bash, register a new role: ::
 Then use the role ``:bash:`echo "like this"```. More information on roles can be found `here <http://docutils.sourceforge.net/docs/ref/rst/roles.html>`__.
 
 To highlight a code snippet, use the ``code`` directive: ::
+
+.. code:: rst
 
   .. code:: bash
 
@@ -43,7 +47,7 @@ Tables
 ------
 For tables with long entries, it is easier to use the ``list-table`` syntax.
 
-::
+.. code:: rst
 
   .. list-table:: Table Name
     :widths: auto
