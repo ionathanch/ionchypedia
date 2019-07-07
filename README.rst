@@ -1,7 +1,7 @@
 =======================
 Welcome to ionchypedia!
 =======================
-.. image:: https://gitb.ert.space/ionathan/wiki/raw/branch/master/ionchypedia.png
+.. image:: https://raw.githubusercontent.com/ionathanch/ionchypedia/master/ionchypedia.png
   :alt: i⚛️nchypedia in rainbow text over a black background
   :width: 100%
 
