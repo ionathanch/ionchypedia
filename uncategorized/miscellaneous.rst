@@ -1,6 +1,6 @@
-=
+=============
 Miscellaneous
-=
+=============
 
 .. role:: bash(code)
   :language: bash
