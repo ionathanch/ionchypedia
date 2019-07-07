@@ -70,3 +70,11 @@ For tables with long entries, it is easier to use the ``list-table`` syntax.
     - the second row.
 
 See `here <http://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-directives>`__ for all the table directives.
+
+Images
+------
+The logo on the front-page README is inserted by the following: ::
+
+  .. image:: ionchypedia.png
+    :alt: i⚛️nchypedia in rainbow text over a black background
+    :width: 100%

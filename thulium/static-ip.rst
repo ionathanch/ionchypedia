@@ -1,6 +1,6 @@
-=================
-Static IP Address
-=================
+==============================
+Setting Up a Static IP Address
+==============================
 
 .. role:: bash(code)
   :language: bash

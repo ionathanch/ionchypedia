@@ -1,5 +1,5 @@
 ===================
-Setting up Services
+Setting Up Services
 ===================
 
 .. role:: bash(code)
