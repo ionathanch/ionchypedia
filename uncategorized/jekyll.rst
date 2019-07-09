@@ -3,14 +3,14 @@ Jekyll Tips
 ===========
 
 .. role:: md(code)
-  :language: markdown
+  :language: md
 
 Front matter
 ------------
 
 Post template:
 
-.. code:: markdown
+.. code:: md
   
   ---
   layout: post
@@ -24,7 +24,7 @@ Post template:
   
 Page template:
 
-.. code:: markdown
+.. code:: md
 
   ---
   layout: page
@@ -103,6 +103,6 @@ Hyperlinks
 
 Linking to another post:
 
-.. code:: markdown
+.. code:: md
 
   [name]({{ site.baseurl }}{% post_url yyyy-mm-dd-post-file-name %})
