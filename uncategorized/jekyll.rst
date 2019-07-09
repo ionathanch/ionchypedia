@@ -96,7 +96,7 @@ Where ``$your-grey`` is a predefined colour variable. Finally, add an image usin
              caption="caption"
              url="https://example.com" %}
 
-*Taken from <https://superdevresources.com/image-caption-jekyll/>*.
+*Taken from https://superdevresources.com/image-caption-jekyll/*.
 
 Hyperlinks
 ----------
