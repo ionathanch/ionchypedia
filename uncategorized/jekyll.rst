@@ -34,7 +34,7 @@ Page template:
   
 Defaults are set in ``_config.yml``:
 
-.. code:: yml
+.. code:: yaml
 
   defaults:
     -
