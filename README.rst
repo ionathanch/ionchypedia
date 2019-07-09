@@ -33,6 +33,7 @@ Pages
 
   uncategorized/miscellaneous
   uncategorized/rst
+  uncategorized/jekyll
   uncategorized/media
   uncategorized/coq-tips
   uncategorized/cantonese
