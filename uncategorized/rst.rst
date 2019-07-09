@@ -7,6 +7,32 @@ Cheat sheets
 * https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 * http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt
 
+Headings
+--------
+
+.. code:: rst
+  
+  #####
+  Parts
+  #####
+  
+  ********
+  Chapters
+  ********
+  
+  ========
+  Sections
+  ========
+  
+  Subsections
+  -----------
+  
+  Subsubsections
+  ^^^^^^^^^^^^^^
+  
+  Paragraphs
+  """"""""""
+
 Code snippets
 -------------
 
