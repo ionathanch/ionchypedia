@@ -4,8 +4,36 @@ Tips on Developing Coq
 
 .. role:: ocaml(code)
   :language: ocaml
+  
+.. role:: bash(code)
+  :language: bash
+  
+Unit testing
+------------
 
-Type Inference
+Running tests
+^^^^^^^^^^^^^
+
+#. :bash:`make bin/coqtop` to compile to native code; :bash:`make bin/coqide` to compile CoqIDE if needed
+#. In ``test-suite``, run :bash:`make unit-tests/<dir>/*.ml.log` to run the unit tests in ``test-suite/unit-tests/<dir>`` (or :bash:`make unit-tests/**/*.ml.log` to run all)
+#. :bash:`make summary` to see test files run; :bash:`make report PRINT_LOGS=1` to see test failures
+
+Test template
+^^^^^^^^^^^^^
+.. code:: ocaml
+
+  open Utest
+
+  let log_out_ch = open_log_out_ch __FILE__
+  
+  let test1 = mk_{eq,bool}_test "name" "description" ...
+  ...
+  let testn = ...
+  let tests = [test1;...;testn]
+  
+  let _ = run_tests __FILE__ log_out_ch tests
+
+Type inference
 --------------
 
 Important types and functions
