@@ -2,6 +2,42 @@
 Media Lists
 ===========
 
+Music
+-----
+* Adele
+* AKMU
+* April Smith and the Great Picture Show
+* The Brobecks
+* COIN
+* DNCE
+* dodie
+* Foster the People
+* fun.
+* half•alive
+* iDKHOW
+* Miike Snow
+* MIKA
+* Neon Trees
+* Panic! at the Disco
+* Regina Spektor
+* Saint Motel
+* San Cisco
+* Tally Hall
+* The Tourist Company
+* Two Door Cinema Club
+* Walk the Moon
+
+* Darwin Deez
+* Eliza Doolittle
+* Hippo Campus
+* Lily Allen
+* Mother Mother
+* OK Go
+* Patrick Wolf
+* Phoenix
+* Vampire Weekend
+* Will Joseph Cook
+
 Novels
 ------
 
