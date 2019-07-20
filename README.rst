@@ -22,6 +22,15 @@ Pages
 
 .. toctree::
   :maxdepth: 5
+  :caption: Coding and programming
+
+  programming/rst
+  programming/jekyll
+  programming/coq-tips
+  programming/miscellaneous
+
+.. toctree::
+  :maxdepth: 5
   :caption: Linux Notes and Tips
 
   linux/tweaks-configs
@@ -31,9 +40,5 @@ Pages
   :maxdepth: 2
   :caption: Uncategorized
 
-  uncategorized/miscellaneous
-  uncategorized/rst
-  uncategorized/jekyll
   uncategorized/media
-  uncategorized/coq-tips
   uncategorized/cantonese

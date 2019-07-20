@@ -11,7 +11,7 @@ Front matter
 Post template:
 
 .. code:: md
-  
+
   ---
   layout: post
   title: "Post Template"
@@ -21,7 +21,7 @@ Post template:
   categories:
     - templates
   ---
-  
+
 Page template:
 
 .. code:: md
@@ -31,7 +31,7 @@ Page template:
   title: "Page Template"
   sidebar_link: true
   ---
-  
+
 Defaults are set in ``_config.yml``:
 
 .. code:: yaml
@@ -58,22 +58,23 @@ In ``_includes/images.html``, add the following:
     {% if include.url %}
     <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
     {% endif %}
-    
+
       <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}"/>
-    
+
     {% if include.url %}
     </a>
     {% endif %}
-  
+
     {% if include.caption %}
       <p class="image-caption">{{ include.caption }}</p>
     {% endif %}
   </div>
-  
-In ``_sass/images.scss`` or however styling is overridden in your theme, add the following:
+
+In ``_sass/images.scss`` or however styling is overridden in your theme,
+add the following:
 
 .. code:: scss
- 
+
   @import "hydeout";
 
   .image-wrapper {
@@ -85,8 +86,9 @@ In ``_sass/images.scss`` or however styling is overridden in your theme, add the
       font-size: 85%;
     }
   }
-  
-Where ``$your-grey`` is a predefined colour variable. Finally, add an image using the following:
+
+Where ``$your-grey`` is a predefined colour variable.
+Finally, add an image using the following:
 
 .. code:: md
 

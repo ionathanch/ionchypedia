@@ -11,25 +11,25 @@ Headings
 --------
 
 .. code:: rst
-  
+
   #####
   Parts
   #####
-  
+
   ********
   Chapters
   ********
-  
+
   ========
   Sections
   ========
-  
+
   Subsections
   -----------
-  
+
   Subsubsections
   ^^^^^^^^^^^^^^
-  
+
   Paragraphs
   """"""""""
 
