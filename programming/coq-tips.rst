@@ -8,6 +8,9 @@ Tips on Developing Coq
 .. role:: bash(code)
   :language: bash
 
+.. role:: coq(code)
+  :language: coq
+
 Unit testing
 ------------
 
@@ -39,46 +42,47 @@ Test template
   
 Plugins
 -------
+Use the plugin ``example_plugin`` with the command :coq:`Declare ML Module "example_plugin".`
 
 In ``example.mlg``:
 
 .. code:: ocaml
-  
+
   {
-  
+
   open Example
   ...
-  
+
   }
-  
+
   DECLARE PLUGIN "example_plugin"
-  
+
   VERNAC COMMAND EXTEND CommandName CLASSIFIED AS SIDEFF
   | [ "Set" "Flag" ] -> { set_flag true }
   END
-  
+
   VERNAC COMMAND EXTEND CommandName CLASSIFIED AS QUERY
   | [ "Print" "Stuff" ] -> { print_stuff () }
   END
-  
+
 In ``example.ml``:
 
 .. code:: ocaml
-  
+
   let set_flag b = ...
   let print_stuff () = ...
 
 In ``example.mli``:
 
 .. code:: ocaml
-  
+
   val set_flag b : bool -> unit
   val print_stuff : unit -> unit
 
 In ``example_plugin.mlpack``:
 
 .. code:: ocaml
-  
+
   Example
   G_example
 
