@@ -42,7 +42,7 @@ Test template
   
 Plugins
 -------
-Use the plugin ``example_plugin`` with the command :coq:`Declare ML Module "example_plugin".`
+Use the plugin ``example_plugin`` with the command :coq:`Declare ML Module "example_plugin".` Rerun :bash:`./configure` so that ``.cma`` files will be created during :bash:`make byte`. In ``Makefile.common``, add to ``PLUGINDIRS`` and ``PLUGINSCMO`` so that ``.cmo`` files will be created during :bash:`make pluginsopt`.
 
 In ``example.mlg``:
 
