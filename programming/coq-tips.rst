@@ -127,4 +127,4 @@ Other
 * If the dependencies of ``kernel/declarations.ml`` are changed,
   e.g. adding a new field to a variant in :ocaml:`Constr.constr`,
   changes may be needed in ``checker/values.ml``,
-  e.g. in :ocaml:`Values.v_constr`.
+  e.g. in :ocaml:`Values.v_constr`. Failure to make the necessary changes may result in mysterious segfaults.
