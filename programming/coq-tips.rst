@@ -10,6 +10,44 @@ Tips on Developing Coq
 
 .. role:: coq(code)
   :language: coq
+  
+Debugging
+---------
+
+Using :bash:`coqtop`
+^^^^^^^^^^^^^^^^^^^^
+
+#. :bash:`make byte` to compile to bytecode
+#. :bash:`bin/coqtop.byte`
+#. :coq:`Drop.`
+#. :ocaml:`#use "base_include";;` for basic printing or :ocaml:`#use "include";;` for pretty-printing
+#. :ocaml:`#trace Module.function;;`
+#. :ocaml:`go();;`
+#. Run your Coq code in the prompt; CTRL-D to exit
+
+Useful functions
+""""""""""""""""
+
+* :ocaml:`val Printf.printf : string -> 'a -> unit`
+* :ocaml:`val Pp.db_string_of_pp : Pp.t -> string`
+* :ocaml:`val Constr.debug_print : constr -> Pp.t`
+* :ocaml:`val print_string : string -> unit`
+e.g. :ocaml:`Printf.printf "%s\n" @@ Pp.db_string_of_pp @@ debug_print @@ mkProp`
+
+Using :bash:`ocamldebug`
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+#. :bash:`make && make byte`
+#. :bash:`dev/ocamldebug-coq bin/coqtop.byte`
+#. ``source db`` to load printers (optional)
+#. ``break @ Module 123`` to set breakpoint at line 123 of `module.ml`
+#. ``run``, then run your Coq code in the prompt
+#. Useful commands (more `here <https://caml.inria.fr/pub/docs/manual-ocaml/debugger.html>`_):
+
+   * ``s`` to step into a function
+   * ``n`` to go to the next function
+   * ``p var`` to print the variable ``var``
+   * ``li`` to print the surrounding lines of the current breakpoint
 
 Unit testing
 ------------
@@ -123,7 +161,7 @@ Contains functions for decomposing and recomposing lambdas, products,
 and arities.
 
 Other
-"""""
+-----
 * If the dependencies of ``kernel/declarations.ml`` are changed,
   e.g. adding a new field to a variant in :ocaml:`Constr.constr`,
   changes may be needed in ``checker/values.ml``,
