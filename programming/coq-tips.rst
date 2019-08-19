@@ -28,11 +28,17 @@ Using :bash:`coqtop`
 Useful functions
 """"""""""""""""
 
-* :ocaml:`val Printf.printf : string -> 'a -> unit`
-* :ocaml:`val Pp.db_string_of_pp : Pp.t -> string`
-* :ocaml:`val Constr.debug_print : constr -> Pp.t`
-* :ocaml:`val print_string : string -> unit`
-e.g. :ocaml:`Printf.printf "%s\n" @@ Pp.db_string_of_pp @@ debug_print @@ mkProp`
+Helpers for printing out `Pp.t`s and `constr`s with a prefixed message:
+
+.. code:: ocaml
+
+  let print_pp msg ppt =
+    let open Format in
+    let open Pp in
+    pp_with std_formatter @@ str msg ++ spc () ++ ppt ++ fnl ()
+
+  let print_constr msg cstr =
+    print_pp msg (debug_print cstr)
 
 Using :bash:`ocamldebug`
 ^^^^^^^^^^^^^^^^^^^^^^^^
