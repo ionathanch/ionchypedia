@@ -98,7 +98,7 @@ Finally, add an image using the following:
              caption="caption"
              url="https://example.com" %}
 
-*Taken from https://superdevresources.com/image-caption-jekyll/*.
+*Taken from* `<https://superdevresources.com/image-caption-jekyll/>`__
 
 Hyperlinks
 ----------
