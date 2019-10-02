@@ -69,7 +69,7 @@ Nextcloud
   * - HTTPS protocol for reverse proxies
     - Add :php:`'overwriteprotocol' => 'https' in config/config.php` to :php:`$CONFIG` array in ``config/config.php``
   * - Running an :php:`occ` command
-    - :bash:`docker exec -u www-data php occ $command`
+    - :bash:`docker exec -u www-data nextcloud php occ $command`
 
 Ghost
 -----
