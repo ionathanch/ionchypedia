@@ -31,10 +31,11 @@ Pages
 
 .. toctree::
   :maxdepth: 5
-  :caption: Linux Notes and Tips
+  :caption: Tech Notes and Tips
 
-  linux/tweaks-configs
-  linux/display-managers
+  tech/firefox-configs
+  tech/linux-tweaks-configs
+  tech/display-managers
 
 .. toctree::
   :maxdepth: 2
