@@ -14,11 +14,17 @@ Tips on Developing Coq
 Debugging
 ---------
 
+Building
+^^^^^^^^
+
+#. :bash:`./configure -profile devel` (use :bash:`-warn-error no` to turn off errorfying warnings)
+#. :bash:`make coqbinaries` (native code) or :bash:`make byte` (bytecode) to build toplevel
+#. :bash:`make coqlib` to build libraries; :bash:`make theories/<path>/<file>.vo` for specific library
+
 Using :bash:`coqtop`
 ^^^^^^^^^^^^^^^^^^^^
 
-#. :bash:`make byte` to compile to bytecode
-#. :bash:`bin/coqtop.byte`
+#. :bash:`bin/coqtop` or :bash:`bin/coqtop.byte`
 #. :coq:`Drop.`
 #. :ocaml:`#use "base_include";;` for basic printing or :ocaml:`#use "include";;` for pretty-printing
 #. :ocaml:`#trace Module.function;;`
