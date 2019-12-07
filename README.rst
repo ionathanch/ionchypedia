@@ -27,6 +27,7 @@ Pages
   programming/rst
   programming/jekyll
   programming/coq-tips
+  programming/latex-arxiv
   programming/miscellaneous
 
 .. toctree::
