@@ -57,6 +57,19 @@ Gitea
     - ``$GITEA/gitea/public/css/index.css``
   * - Other
     - Copy files as necessary from the `Gitea repository <https://github.com/go-gitea/gitea>`__ under ``custom/conf``, ``options``, ``public``, and ``templates``
+    
+Nextcloud
+---------
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+  
+  * - Modification
+    - Location
+  * - HTTPS protocol for reverse proxies
+    - Add :php:`'overwriteprotocol' => 'https' in config/config.php` to :php:`$CONFIG` array in ``config/config.php``
+  * - Running an :php:`occ` command
+    - :bash:`docker exec -u www-data nextcloud php occ $command`
 
 Ghost
 -----

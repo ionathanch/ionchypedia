@@ -62,7 +62,7 @@ To highlight a code snippet, use the ``code`` directive: ::
 .. code:: rst
 
   .. code:: bash
-
+  
     echo "Like this."
 
 More information on directives can be found `here <http://docutils.sourceforge.net/docs/ref/rst/directives.html>`__.

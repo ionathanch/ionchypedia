@@ -1,5 +1,5 @@
 =========================
-Tweaks and Configurations
+Linux Tweaks and Configurations
 =========================
 
 .. role:: bash(code)
