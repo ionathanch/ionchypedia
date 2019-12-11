@@ -6,7 +6,8 @@ LaTeX Fixes for arXiv Submissions
   :language: latex
 
 These are the errors I encountered when creating a submission with arXiv by
-uploading LaTeX files. There are probably more proper ways to fix them.
+uploading LaTeX files created in Overleaf. There are probably more proper ways
+to fix them.
 See `Considerations for TeX Submissions <https://export.arxiv.org/help/submit_tex>`__
 and `Common Mistakes <https://arxiv.org/help/faq/mistakes>`__ for other errors.
 
@@ -21,6 +22,13 @@ and `Common Mistakes <https://arxiv.org/help/faq/mistakes>`__ for other errors.
   * - ``Undefined control sequence. <argument> \mdseries@tt``
     - Added :latex:`\makeatletter\providecommand{\mdseries@tt}{}\makeatother` *before* packages.
   * - ``Package minted Error: You must invoke LaTeX with the -shell-escape flag.``
-    - I don't think there's any way around this, since syntax highlighting requires Pygments. Used ``\usepackage[draft]{minted}`` to disable this.
+    - Compiled with :latex:`\usepackage[finalizecache,cachedir=.]{minted}`,
+      downloaded all ``*.pygtex`` and ``*.pygstyle`` files from the logs,
+      uploaded them to the root directory, and compiled with
+      :latex:`\usepackage[frozencache,cachedir=.]{minted}`.
   * - ``LaTeX Error: Option clash for package hyperref.``
     - Added override file ``00README.XXX`` with the line ``nohypertex``. arXiv loads HyperTeX by default, and acmart formats try to load them again.
+  * - arXiv is unable to run ``graphviz``.
+    - I just converted by DOT content to images beforehand and included them as graphics, but the proper solution would be to use ``dot2texi``.
+  * - ``Unable to convert to PDF.``
+    - Added :latex:`\pdfoutput=1` to the beginning of the main file.
