@@ -28,4 +28,4 @@ Copy image in PNG format to ``~/.face``
 
 Enabling case-insensitive tab completion in Bash
 ------------------------------------------------
-Add :bash:`set completion-ignore-case on` in ~/.inputrc
+Add :bash:`set completion-ignore-case on` to ``~/.inputrc``
