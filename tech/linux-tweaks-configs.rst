@@ -24,4 +24,8 @@ N.B. This will disable column selection in VSCode!
 
 Adding a user photo
 -------------------
-#. Copy image in PNG format to ``~/.face``
+Copy image in PNG format to ``~/.face``
+
+Enabling case-insensitive tab completion in Bash
+------------------------------------------------
+Add :bash:`set completion-ignore-case on` in ~/.inputrc
