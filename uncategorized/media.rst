@@ -43,6 +43,7 @@ Novels
 
 English
 ^^^^^^^
+* *Less*, Andrew Sean Greer
 * *Call Me By Your Name*, André Aciman
 * *Do Androids Dream of Electric Sheep?*, Philip K. Dick
 * *How to Be a Normal Person*, TJ Klune
