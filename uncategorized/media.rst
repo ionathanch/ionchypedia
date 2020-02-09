@@ -37,6 +37,7 @@ Music
 * Phoenix
 * Vampire Weekend
 * Will Joseph Cook
+* The Wombats
 
 Novels
 ------
