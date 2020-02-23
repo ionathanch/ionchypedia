@@ -34,7 +34,7 @@ Using :bash:`coqtop`
 Useful functions
 """"""""""""""""
 
-Helpers for printing out `Pp.t`s and `constr`s with a prefixed message:
+Helpers for printing out :ocaml:`Pp.t`s and :ocaml:`constr`s with a prefixed message:
 
 .. code:: ocaml
 

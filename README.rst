@@ -42,5 +42,6 @@ Pages
   :maxdepth: 2
   :caption: Uncategorized
 
+  uncategorized/travel
   uncategorized/media
   uncategorized/cantonese
