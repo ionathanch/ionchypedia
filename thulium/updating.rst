@@ -27,7 +27,7 @@ Gitea
 -----
 #. :bash:`docker-compose down`
 #. :bash:`docker pull gitea/gitea`
-#. Update ``$GITEA/options/locale/locale_en-US.ini`` (especially ``app_desc``) and ``$GITEA/templates/home.tmpl`` (especially ``AppName``) as necessary from https://github.com/go-gitea/gitea
+#. Update ``$GITEA/templates/home.tmpl`` (especially ``{{.i18n.Tr "startpage.app_desc"}}``) and possibly ``$GITEA/conf/app.ini`` as necessary from https://github.com/go-gitea/gitea
 #. :bash:`docker-compose up -d`
 #. Remember to delete unused Docker images!
 
