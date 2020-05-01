@@ -1,9 +1,10 @@
 =======================
 Welcome to ionchypedia!
 =======================
-.. image:: https://raw.githubusercontent.com/ionathanch/ionchypedia/master/ionchypedia.png
-  :alt: i⚛️nchypedia in rainbow text over a black background
-  :width: 100%
+..
+  .. image:: https://raw.githubusercontent.com/ionathanch/ionchypedia/master/ionchypedia.png
+    :alt: i⚛️nchypedia in rainbow text over a black background
+    :width: 100%
 
 =====
 Pages
