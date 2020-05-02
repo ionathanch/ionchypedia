@@ -37,6 +37,17 @@ General
           sudo ufw status # check active rules
           sudo ufw delete allow 22000/tcp # remove TCP port 22000
 
+TTRSS
+-----
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+
+  * - Modification
+    - Location
+  * - Database configuration (:bash:`SELF_URL_PATH`, etc.)
+    - ``/var/www/ttrss/config.php``
+
 Gitea
 -----
 .. list-table::
