@@ -19,9 +19,7 @@ Installed Programs
 ------------------
 Installed
 ^^^^^^^^^
-* Vim
-* Neofetch
-* Synaptic
+* Vim, Git, GParted, Synaptic, Neofetch
 * Tilix (set as default terminal in Settings > Preferred Applications; :bash:`tilix --preferences` to open Preferences)
 * `VSCode <https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions>`_
 * `Spacemacs <https://github.com/syl20bnr/spacemacs#default-installation>`_
