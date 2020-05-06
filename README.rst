@@ -37,6 +37,7 @@ Pages
 
   tech/firefox-configs
   tech/linux-tweaks-configs
+  tech/xubuntu-customization
   tech/display-managers
 
 .. toctree::
