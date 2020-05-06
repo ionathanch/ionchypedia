@@ -33,11 +33,11 @@ Removed
 ^^^^^^^
 (via "Complete removal" using Synaptic)
 
-* libreoffice*, libuno* (remove keyboard shortcuts in Settings > Keyboard > Application Shortcuts)
+* libreoffice\*, libuno\* (remove keyboard shortcuts in Settings > Keyboard > Application Shortcuts)
 * xfce4-terminal, xfce4-notes, xfburn
 * pidgin*, thunderbird
 * gnome-mines, gnome-sudoku, sgt-puzzles
-* simple-scan, mate-calc-common
+* simple-scan, mate-calc-common, gnome-font-viewer
 
 Configuration Files
 -------------------
