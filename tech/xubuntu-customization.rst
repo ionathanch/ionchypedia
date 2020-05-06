@@ -20,6 +20,7 @@ Installed Programs
 Installed
 ^^^^^^^^^
 * Vim
+* Neofetch
 * Synaptic
 * Tilix (set as default terminal in Settings > Preferred Applications; :bash:`tilix --preferences` to open Preferences)
 * `VSCode <https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions>`_
