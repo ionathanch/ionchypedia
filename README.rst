@@ -37,7 +37,7 @@ Pages
 
   tech/firefox-configs
   tech/linux-tweaks-configs
-  tech/xubuntu-customization
+  tech/linux-customization
   tech/display-managers
   tech/ubc-alumni-email-sync
 
