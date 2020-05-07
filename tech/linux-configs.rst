@@ -159,3 +159,11 @@ Installed Programs
 * ``racket``
 * ``source-code-pro-fonts``
 * ``neofetch``
+
+``.profile``
+^^^^^^^^^^^
+.. code:: bash
+
+  export EDITOR=/usr/bin/vim
+  export BROWSER=/usr/bin/firefox-developer-edition
+
