@@ -59,7 +59,7 @@ Add the following:
 
 ``.i3/config``
 """""""""""""
-Change the following:
+Change the following (:bash:`$mod+Shift+c` to reload):
 
 .. code:: ini
 
@@ -166,3 +166,9 @@ Installed Programs
   export EDITOR=/usr/bin/vim
   export BROWSER=/usr/bin/firefox-developer-edition
 
+``.Xresources``
+^^^^^^^^^^^^^^^
+.. code:: ini
+
+  ! change the terminal font
+  URxvt.font:                       9x15,xft:Source Code Pro:size=10
