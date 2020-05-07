@@ -155,9 +155,8 @@ Pacman Cheatsheet
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
-* ``code``
-* ``racket``
-* ``source-code-pro-fonts``
+* ``code``, ``racket``
+* ``source-code-pro-fonts``, ``otf-fira-code``
 * ``neofetch``
 
 ``.profile``
