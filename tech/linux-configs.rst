@@ -68,6 +68,7 @@ Change the following:
   bindsym $mod+F2 exec firefox-developer-edition                       # replace Pale Moon
   bindsym $mod+Print --release exec --no-startup-id i3-scrot -s       # select area by default
   bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -w # capture window on Shift
+  focus_follows_mouse no                                              # click to focus window
 
 ``.inputrc``
 """"""""""""
