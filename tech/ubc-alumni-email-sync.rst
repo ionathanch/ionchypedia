@@ -19,7 +19,7 @@ Client Certificate
 
 Server Settings
 ---------------
-Domain\Username
+Domain\\Username
 ^^^^^^^^^^^^^^^
 ``EAD\[CWL username].stu``
 
