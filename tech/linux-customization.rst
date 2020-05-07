@@ -1,11 +1,11 @@
-==========================
-Customizations for Xubuntu
-==========================
-
 .. role:: bash(code)
   :language: bash
 
 I frequently forget the various customizations I configure after setting up a distro installation, so this time around I've finally compiled a list.
+
+==========================
+Customizations for Xubuntu
+==========================
 
 Aesthetic Considerations
 ------------------------
@@ -85,3 +85,38 @@ Add the following:
     fi;
     command man "$@"
   }
+
+=============================
+Customizations for Manjaro i3
+=============================
+
+Pacman Cheatsheet
+^^^^^^^^^^^^^^^^^
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+
+  * - Command
+    - Description
+  * - :bash:`pacman -Syu [package]`
+    - Sync, refresh, upgrade, install
+  * - :bash:`pacman -Rsu [package]`
+    - Remove recursively unneeded package
+  * - :bash:`pacman -Qs [package]`
+    - Search local database
+  * - :bash:`pacman -Ss [package]`
+    - Search sync database
+  * - :bash:`pacman -Qttdq | pacman -Rs -`
+    - Remove recursively all (optional) orphan dependencies quietly
+
+``.i3/config``
+^^^^^^^^^^^^^
+Change the following:
+
+.. code:: ini
+
+  bindsym $mod+q kill                                                 # Close window
+  # bindsym $mod+q split toggle                                       # I use $mod+h/+v anyway
+  bindsym $mod+F2 exec firefox-developer-edition                       # Replace Pale Moon
+  bindsym $mod+Print --release exec --no-startup-id i3-scrot -s       # Select area by default
+  bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -w # Capture window on Shift
