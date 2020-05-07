@@ -36,8 +36,7 @@ Pages
   :caption: Tech Notes and Tips
 
   tech/firefox-configs
-  tech/linux-tweaks-configs
-  tech/linux-customization
+  tech/linux-configs
   tech/display-managers
   tech/ubc-alumni-email-sync
 
