@@ -1,33 +1,32 @@
-**************************************
+======================================
 Linux Customizations and Configurations
-**************************************
+======================================
 
 .. role:: bash(code)
   :language: bash
 
 I frequently forget the various customizations I configure after setting up a distro installation, so this time around I've finally compiled a list.
 
-=======
 General
-=======
+-------
 
 Configuration Files
--------------------
+^^^^^^^^^^^^^^^^^^
 
 ``.vimrc``
-^^^^^^^^^^
+""""""""""
 Use `sensible.vim <https://github.com/tpope/vim-sensible>`_ and add the following:
 
 .. code:: vim
 
   colorscheme darkblue " desert, elflord, slate are nice too
-  set shiftwidth=4    " 4-space tabs (reindenting)
-  set tabstop=4       " 4-space tabs (viewing)
-  set softtabstop=4   " 4-space tabs (editing)
-  set expandtab       " tabs -> spaces
-  set number          " line numbers
-  set hlsearch        " highlight search matches
-  set smartcase       " being smart about cases during searching
+  set shiftwidth=4     " 4-space tabs (reindenting)
+  set tabstop=4        " 4-space tabs (viewing)
+  set softtabstop=4    " 4-space tabs (editing)
+  set expandtab        " tabs -> spaces
+  set number           " line numbers
+  set hlsearch         " highlight search matches
+  set smartcase        " being smart about cases during searching
 
   " :W sudo saves the file
   " (useful for handling the permission-denied error)
@@ -35,7 +34,7 @@ Use `sensible.vim <https://github.com/tpope/vim-sensible>`_ and add the followin
   command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 ``.bashrc``
-^^^^^^^^^^^
+"""""""""""
 Add the following:
 
 .. code:: bash
@@ -59,7 +58,7 @@ Add the following:
   }
 
 ``.i3/config``
-^^^^^^^^^^^^^
+"""""""""""""
 Change the following:
 
 .. code:: ini
@@ -71,13 +70,13 @@ Change the following:
   bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -w # capture window on Shift
 
 ``.inputrc``
-^^^^^^^^^^^^
+""""""""""""
 .. code:: bash
 
   set completion-ignore-case on # case-insensitive tab completion
 
 Disabling middle-click paste
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 From https://unix.stackexchange.com/a/277488:
 
 1. :bash:`sudo apt install xsel xbindkeys xdotool`
@@ -94,12 +93,11 @@ From https://unix.stackexchange.com/a/277488:
 N.B. This will disable column selection in VSCode!
 
 
-==========================
 Customizations for Xubuntu
-==========================
+--------------------------
 
 Aesthetic Considerations
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 * GTK theme: Greybird-dark (Settings > Appearance > Style)
 * Xfwm theme: Numix (Settings > Window Manager > Style)
 * Icon theme: `ePapirus <https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/>`_ (Settings > Appearance > Icons)
@@ -107,9 +105,9 @@ Aesthetic Considerations
 * Desktop background: ``/usr/share/xfce4/backdrops`` (Settings > Desktop)
 
 Installed Programs
-------------------
+^^^^^^^^^^^^^^^^^^
 Installed
-^^^^^^^^^
+"""""""""
 * Vim, Git, GParted, Synaptic, Neofetch
 * Tilix (set as default terminal in Settings > Preferred Applications; :bash:`tilix --preferences` to open Preferences)
 * `VSCode <https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions>`_
@@ -121,7 +119,7 @@ Installed
 * `Source Code Pro <https://github.com/adobe-fonts/source-code-pro>`_ (copy into ``/usr/local/share/fonts/`` and run :bash:`sudo fc-cache -fv`)
 
 Removed
-^^^^^^^
+"""""""
 (via "Complete removal" using Synaptic)
 
 * libreoffice\*, libuno\* (remove keyboard shortcuts in Settings > Keyboard > Application Shortcuts)
@@ -131,9 +129,8 @@ Removed
 * simple-scan, mate-calc-common, gnome-font-viewer
 
 
-=============================
 Customizations for Manjaro i3
-=============================
+-----------------------------
 
 Pacman Cheatsheet
 ^^^^^^^^^^^^^^^^^
@@ -147,9 +144,17 @@ Pacman Cheatsheet
     - Sync, refresh, upgrade, install
   * - :bash:`pacman -Rsu [package]`
     - Remove recursively unneeded package
-  * - :bash:`pacman -Qs [package]`
+  * - :bash:`pacman -Qs [string]`
     - Search local database
-  * - :bash:`pacman -Ss [package]`
+  * - :bash:`pacman -Ss [string]`
     - Search sync database
   * - :bash:`pacman -Qttdq | pacman -Rs -`
     - Remove recursively all (optional) orphan dependencies quietly
+
+Installed Programs
+^^^^^^^^^^^^^^^^^^
+* ``firefox-developer-edition`` (removed ``palemoon-bin``)
+* ``code``
+* ``racket``
+* ``source-code-pro-fonts``
+* ``neofetch``
