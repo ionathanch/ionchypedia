@@ -39,6 +39,7 @@ Pages
   tech/linux-tweaks-configs
   tech/xubuntu-customization
   tech/display-managers
+  tech/ubc-alumni-email-sync
 
 .. toctree::
   :maxdepth: 2
