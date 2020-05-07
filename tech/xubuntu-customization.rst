@@ -48,6 +48,7 @@ Use `sensible.vim <https://github.com/tpope/vim-sensible>`_ and add the followin
 
 .. code:: vim
 
+  colorscheme darkblue " desert, elflord, slate are nice too
   set shiftwidth=4    " 4-space tabs (reindenting)
   set tabstop=4       " 4-space tabs (viewing)
   set softtabstop=4   " 4-space tabs (editing)
