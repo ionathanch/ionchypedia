@@ -69,6 +69,17 @@ Change the following (:bash:`$mod+Shift+c` to reload):
   bindsym $mod+Print --release exec --no-startup-id i3-scrot -s       # select area by default
   bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -w # capture window on Shift
   focus_follows_mouse no                                              # click to focus window
+  # arrange monitors correctly on startup
+  exec --no-startup-id xrandr --output VGA1 --primary --auto --left-of HDMI1
+  
+``.Xresources``
+"""""""""""""""
+Change the following:
+
+.. code:: ini
+
+  ! set the URxvt terminal font
+  URxvt.font:xft:Source Code Pro:size=10
 
 ``.inputrc``
 """"""""""""
@@ -165,10 +176,3 @@ Installed Programs
 
   export EDITOR=/usr/bin/vim
   export BROWSER=/usr/bin/firefox-developer-edition
-
-``.Xresources``
-^^^^^^^^^^^^^^^
-.. code:: ini
-
-  ! change the terminal font
-  URxvt.font:                       9x15,xft:Source Code Pro:size=10
