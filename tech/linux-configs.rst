@@ -172,7 +172,7 @@ Installed Programs
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
 * ``code``, ``racket``
 * ``source-code-pro-fonts``, ``otf-fira-code``
-* ``neofetch``
+* ``neofetch``, ``lm_sensors``
 
 ``.profile``
 ^^^^^^^^^^^
