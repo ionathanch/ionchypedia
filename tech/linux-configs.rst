@@ -71,6 +71,10 @@ Change the following (:bash:`$mod+Shift+c` to reload):
   focus_follows_mouse no                                              # click to focus window
   # arrange monitors correctly on startup
   exec --no-startup-id xrandr --output VGA1 --primary --auto --left-of HDMI1
+
+``.i3status.conf``
+""""""""""""""""""
+Copy from ``/etc/i3/i3status.conf``. Refer to the `man page <https://i3wm.org/i3status/manpage.html>`_ and to `strftime <https://strftime.org/>`_ for time format strings.
   
 ``.Xresources``
 """""""""""""""
