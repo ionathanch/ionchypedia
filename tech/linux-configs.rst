@@ -170,7 +170,8 @@ Pacman Cheatsheet
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
-* ``code``, ``racket``
+* ``code`` (removed ``mousepad``)
+* ``racket``
 * ``source-code-pro-fonts``, ``otf-fira-code``
 * ``neofetch``, ``lm_sensors``
 
