@@ -1,41 +1,38 @@
-======================================
+=======================================
 Linux Customizations and Configurations
-======================================
+=======================================
 
 .. role:: bash(code)
   :language: bash
 
 I frequently forget the various customizations I configure after setting up a distro installation, so this time around I've finally compiled a list.
 
-General
--------
-
 Configuration Files
-^^^^^^^^^^^^^^^^^^
+-------------------
 
 ``.vimrc``
-""""""""""
+^^^^^^^^^^
 Use `sensible.vim <https://github.com/tpope/vim-sensible>`_ and add the following:
 
 .. code:: vim
 
-  colorscheme darkblue " desert, elflord, slate are nice too
-  set shiftwidth=4     " 4-space tabs (reindenting)
-  set tabstop=4        " 4-space tabs (viewing)
-  set softtabstop=4    " 4-space tabs (editing)
-  set expandtab        " tabs -> spaces
-  set number           " line numbers
-  set hlsearch         " highlight search matches
-  set smartcase        " being smart about cases during searching
+  colorscheme peachpuff " desert, slate are nice too
+  set shiftwidth=4      " 4-space tabs (reindenting)
+  set tabstop=4         " 4-space tabs (viewing)
+  set softtabstop=4     " 4-space tabs (editing)
+  set expandtab         " tabs -> spaces
+  set number            " line numbers
+  set hlsearch          " highlight search matches
+  set smartcase         " being smart about cases during searching
 
   " :W sudo saves the file
   " (useful for handling the permission-denied error)
   " https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
   command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
-``.bashrc``
-"""""""""""
-Add the following:
+``.bashrc``, ``.zshrc``
+^^^^^^^^^^^^^^^^^^^^^^^
+Add the following (optional):
 
 .. code:: bash
 
@@ -57,45 +54,60 @@ Add the following:
     command man "$@"
   }
 
+``.profile``
+^^^^^^^^^^^
+Change the following to set default applications:
+
+.. code:: bash
+
+  export EDITOR=/usr/bin/vim
+  export BROWSER=/usr/bin/firefox-developer-edition
+
+``.Xresources``
+^^^^^^^^^^^^^^^
+Change the following and use :bash:`xrdb ~/.Xresources` to reload:
+
+.. code:: ini
+
+  ! set the XTerm terminal font
+  XTerm*faceName:   Source Code Pro
+  XTerm*faceSize:   10
+  ! set the URxvt terminal font
+  URxvt.font:xft:   Source Code Pro:size=10
+
+``.inputrc``
+^^^^^^^^^^^^
+Add the following (bash only):
+
+.. code:: bash
+
+  set completion-ignore-case on # case-insensitive tab completion
+
 ``.i3/config``
-"""""""""""""
+^^^^^^^^^^^^^^
 Change the following (:bash:`$mod+Shift+c` to reload):
 
 .. code:: ini
 
   bindsym $mod+q kill                                                 # close window
   # bindsym $mod+q split toggle                                       # I use $mod+h/+v anyway
-  bindsym $mod+F2 exec firefox-developer-edition                       # replace Pale Moon
+  bindsym $mod+F2 exec firefox-developer-edition                      # replace Pale Moon
   bindsym $mod+Print --release exec --no-startup-id i3-scrot -s       # select area by default
   bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -w # capture window on Shift
   focus_follows_mouse no                                              # click to focus window
   # arrange monitors correctly on startup
+  # use `xrandr -q` to list monitors
   exec --no-startup-id xrandr --output VGA1 --primary --auto --left-of HDMI1
 
 ``.i3status.conf``
-""""""""""""""""""
-Copy from ``/etc/i3/i3status.conf``. Refer to the `man page <https://i3wm.org/i3status/manpage.html>`_ and to `strftime <https://strftime.org/>`_ for time format strings.
-  
-``.Xresources``
-"""""""""""""""
-Change the following:
+^^^^^^^^^^^^^^^^^^
+Copy from ``/etc/i3/i3status.conf``. Refer to the `man page <https://i3wm.org/i3status/manpage.html>`_ and to `strftime <https://strftime.org/>`_ for time format strings. Use :bash:`$mod+Shift+r` to reload.
 
-.. code:: ini
-
-  ! set the URxvt terminal font
-  URxvt.font:xft:Source Code Pro:size=10
-
-``.inputrc``
-""""""""""""
-.. code:: bash
-
-  set completion-ignore-case on # case-insensitive tab completion
-
-Disabling middle-click paste
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Disabling Middle-Click Paste
+----------------------------
 From https://unix.stackexchange.com/a/277488:
 
-1. :bash:`sudo apt install xsel xbindkeys xdotool`
+1. Install ``xsel``, ``xbindkeys``, ``xdotool``
 2. In ``~/.xbindkeysrc``, insert
 
 .. code:: bash
@@ -105,15 +117,12 @@ From https://unix.stackexchange.com/a/277488:
 
 3. In ``~/.profile``, insert :bash:`xbindkeys`
 4. :bash:`source ~/.profile`
-
-N.B. This will disable column selection in VSCode!
-
-
+ 
 Customizations for Xubuntu
 --------------------------
 
-Aesthetic Considerations
-^^^^^^^^^^^^^^^^^^^^^^^^
+Theming
+^^^^^^^
 * GTK theme: Greybird-dark (Settings > Appearance > Style)
 * Xfwm theme: Numix (Settings > Window Manager > Style)
 * Icon theme: `ePapirus <https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/>`_ (Settings > Appearance > Icons)
@@ -144,12 +153,11 @@ Removed
 * gnome-mines, gnome-sudoku, sgt-puzzles
 * simple-scan, mate-calc-common, gnome-font-viewer
 
-
 Customizations for Manjaro i3
 -----------------------------
 
-Pacman Cheatsheet
-^^^^^^^^^^^^^^^^^
+Pacman/Pamac Cheatsheet
+^^^^^^^^^^^^^^^^^^^^^^^
 .. list-table::
   :widths: auto
   :header-rows: 1
@@ -166,6 +174,10 @@ Pacman Cheatsheet
     - Search sync database
   * - :bash:`pacman -Qttdq | pacman -Rs -`
     - Remove recursively all (optional) orphan dependencies quietly
+  * - :bash:`pamac search -a [string]`
+    - Search AUR
+  * - :bash:`pamac build [package]`
+    - Install from AUR
 
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
@@ -174,10 +186,5 @@ Installed Programs
 * ``racket``
 * ``source-code-pro-fonts``, ``otf-fira-code``
 * ``neofetch``, ``lm_sensors``
+* ``minecraft-launcher`` (AUR)
 
-``.profile``
-^^^^^^^^^^^
-.. code:: bash
-
-  export EDITOR=/usr/bin/vim
-  export BROWSER=/usr/bin/firefox-developer-edition
