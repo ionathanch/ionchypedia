@@ -182,8 +182,8 @@ Pacman/Pamac Cheatsheet
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
-* ``code`` (removed ``mousepad``)
-* ``racket``
+* ``code`` (removed ``mousepad``), ``racket``
+* ``texlive-most`` (``-core``, ``-bibtexextra``, ``-latexextra``, ``-fontsextra``, ``-science``), ``tllocalmgr-git`` (AUR)
 * ``source-code-pro-fonts``, ``otf-fira-code``
 * ``neofetch``, ``lm_sensors``
 * ``minecraft-launcher`` (AUR)
