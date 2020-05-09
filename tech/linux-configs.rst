@@ -97,6 +97,8 @@ Change the following (:bash:`$mod+Shift+c` to reload):
   focus_follows_mouse no                                              # click to focus window
   # arrange monitors correctly on startup
   # use `xrandr -q` to list monitors
+  # this should go in /etc/lightdm/lightdm.conf
+  # under `display-setup-script` as well
   exec --no-startup-id xrandr --output VGA1 --primary --auto --left-of HDMI1
 
 ``.i3status.conf``
@@ -185,6 +187,6 @@ Installed Programs
 * ``code`` (removed ``mousepad``), ``racket``
 * ``texlive-most`` (``-core``, ``-bibtexextra``, ``-latexextra``, ``-fontsextra``, ``-science``), ``tllocalmgr-git`` (AUR)
 * ``source-code-pro-fonts``, ``otf-fira-code``
-* ``neofetch``, ``lm_sensors``
+* ``neofetch``, ``lm_sensors``, ``lightdm-settings``
 * ``minecraft-launcher`` (AUR)
 
