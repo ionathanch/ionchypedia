@@ -24,6 +24,14 @@ Use `sensible.vim <https://github.com/tpope/vim-sensible>`_ and add the followin
   set number            " line numbers
   set hlsearch          " highlight search matches
   set smartcase         " being smart about cases during searching
+  set mouse=a           " click to place cursor
+
+  " Map register "+ to system secondary clipboard
+  " and set ctrl-c/ctrl-x as copy/cut
+  " N.B. Pasting will still require ctrl-shift-v
+  set clipboard=unnamedplus
+  vmap <C-C> "+y
+  vmap <C-X> "+d
 
   " :W sudo saves the file
   " (useful for handling the permission-denied error)
@@ -184,7 +192,7 @@ Pacman/Pamac Cheatsheet
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
-* ``code`` (removed ``mousepad``), ``racket``
+* ``gvim`` (replaced ``vim``), ``code`` (removed ``mousepad``), ``racket``
 * ``texlive-most`` (``-core``, ``-bibtexextra``, ``-latexextra``, ``-fontsextra``, ``-science``), ``tllocalmgr-git`` (AUR)
 * ``source-code-pro-fonts``, ``otf-fira-code``
 * ``neofetch``, ``lm_sensors``, ``lightdm-settings``
