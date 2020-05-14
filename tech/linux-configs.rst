@@ -188,6 +188,8 @@ Pacman/Pamac Cheatsheet
     - Search AUR
   * - :bash:`pamac build [package]`
     - Install from AUR
+  * - :bash:`pamac upgrade -a`
+    - Upgrade packages installed from AUR
 
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
