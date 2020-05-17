@@ -107,7 +107,7 @@ Change the following (:bash:`$mod+Shift+c` to reload):
   # use `xrandr -q` to list monitors
   # this should go in /etc/lightdm/lightdm.conf
   # under `display-setup-script` as well
-  exec --no-startup-id xrandr --output VGA1 --primary --auto --left-of HDMI1
+  exec --no-startup-id xrandr --output HDMI-1 --primary --auto --left-of DVI-I-1
 
 ``.i3status.conf``
 ^^^^^^^^^^^^^^^^^^
