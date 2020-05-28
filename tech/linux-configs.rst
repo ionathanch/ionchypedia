@@ -93,7 +93,7 @@ Add the following (bash only):
 
 ``.i3/config``
 ^^^^^^^^^^^^^^
-Change the following (:bash:`$mod+Shift+c` to reload):
+Change and add the following (:bash:`$mod+Shift+c` to reload):
 
 .. code:: ini
 
@@ -108,6 +108,7 @@ Change the following (:bash:`$mod+Shift+c` to reload):
   # this should go in /etc/lightdm/lightdm.conf
   # under `display-setup-script` as well
   exec --no-startup-id xrandr --output HDMI-1 --primary --auto --left-of DVI-I-1
+  exec --no-startup-id ibus-daemon -drx
 
 ``.i3status.conf``
 ^^^^^^^^^^^^^^^^^^
@@ -187,7 +188,7 @@ Pacman/Pamac Cheatsheet
   * - :bash:`pamac search (-a) [string]`
     - Search Manjaro repo (and AUR)
   * - :bash:`pamac install [package]`
-    * Install package from Manjaro repo
+    - Install package from Manjaro repo
   * - :bash:`pamac build [package]`
     - Install package from AUR
   * - :bash:`pamac upgrade (-a)`
@@ -202,7 +203,7 @@ Installed Programs
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
 * ``gvim`` (replaced ``vim``), ``code`` (removed ``mousepad``), ``racket``
 * ``texlive-most`` (``-core``, ``-bibtexextra``, ``-latexextra``, ``-fontsextra``, ``-science``), ``tllocalmgr-git`` (AUR)
-* ``source-code-pro-fonts``, ``otf-fira-code``, ``noto-fonts-cjk``
+* ``source-code-pro-fonts``, ``otf-fira-code``, ``noto-fonts-cjk``, ``noto-fonts-emoji``
 * ``manjaro-printer``, ``system-config-printer``
 * ``ibus``, ``ibus-libpinyin``
 * ``neofetch``, ``lm_sensors``, ``lightdm-settings``
