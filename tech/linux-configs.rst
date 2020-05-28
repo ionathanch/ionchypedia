@@ -63,7 +63,7 @@ Add the following (optional):
   }
 
 ``.profile``
-^^^^^^^^^^^
+^^^^^^^^^^^^
 Change the following to set default applications:
 
 .. code:: bash
@@ -120,10 +120,10 @@ From https://unix.stackexchange.com/a/277488:
 1. Install ``xsel``, ``xbindkeys``, ``xdotool``
 2. In ``~/.xbindkeysrc``, insert
 
-.. code:: bash
+  .. code:: bash
 
-  "echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"
-  b:2 + Release
+    "echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"
+    b:2 + Release
 
 3. In ``~/.profile``, insert :bash:`xbindkeys`
 4. :bash:`source ~/.profile`
@@ -184,19 +184,26 @@ Pacman/Pamac Cheatsheet
     - Search sync database
   * - :bash:`pacman -Qttdq | pacman -Rs -`
     - Remove recursively all (optional) orphan dependencies quietly
-  * - :bash:`pamac search -a [string]`
-    - Search AUR
+  * - :bash:`pamac search (-a) [string]`
+    - Search Manjaro repo (and AUR)
+  * - :bash:`pamac install [package]`
+    * Install package from Manjaro repo
   * - :bash:`pamac build [package]`
-    - Install from AUR
-  * - :bash:`pamac upgrade -a`
-    - Upgrade packages installed from AUR
+    - Install package from AUR
+  * - :bash:`pamac upgrade (-a)`
+    - Upgrade packages installed from Manjaro repo (and AUR)
+  * - :bash:`pamac remove [package]`
+    - Uninstall package
+  * - :bash:`pamac remove -o`
+    - Uninstall orphaned packages
 
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
 * ``gvim`` (replaced ``vim``), ``code`` (removed ``mousepad``), ``racket``
 * ``texlive-most`` (``-core``, ``-bibtexextra``, ``-latexextra``, ``-fontsextra``, ``-science``), ``tllocalmgr-git`` (AUR)
-* ``source-code-pro-fonts``, ``otf-fira-code``
+* ``source-code-pro-fonts``, ``otf-fira-code``, ``noto-fonts-cjk``
+* ``manjaro-printer``, ``system-config-printer``
+* ``ibus``, ``ibus-libpinyin``
 * ``neofetch``, ``lm_sensors``, ``lightdm-settings``
-* ``minecraft-launcher`` (AUR)
-
+* ``minecraft-launcher`` (AUR), ``steam-manjaro``

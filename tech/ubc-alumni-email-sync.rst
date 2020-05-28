@@ -1,13 +1,13 @@
 UBC Alumni Email Syncing on Android
 ===================================
 
-The instructions for syncing UBC's alumni email account on Android devices `here <https://it.ubc.ca/services/email-voice-internet/student-alumni-email-service/setup-documentation>`_ are quite outdated. The following is what has worked for me on Android 10.
+The instructions for syncing UBC's alumni email account on Android devices `here <https://it.ubc.ca/services/email-voice-internet/student-alumni-email-service/setup-documentation>`__ are quite outdated. The following is what has worked for me on Android 10.
 
 Account Info
 ------------
 Email
 ^^^^^
-``[local-part]@alumni.ubc.ca`` (this is the email address you have registered `here <https://id.ubc.ca/bpe/>`_)
+``[local-part]@alumni.ubc.ca`` (this is the email address you have registered `here <https://id.ubc.ca/bpe/>`__)
 
 Password
 ^^^^^^^^
@@ -20,7 +20,7 @@ Client Certificate
 Server Settings
 ---------------
 Domain\\Username
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 ``EAD\[CWL username].stu``
 
 Server

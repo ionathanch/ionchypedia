@@ -14,7 +14,7 @@ Tips on Developing Coq
 Setup
 -----
 
-#. :bash:`sudo apt install opam`(OCaml package manager)
+#. :bash:`sudo apt install opam` (OCaml package manager)
 #. :bash:`opam init && opam switch create ocaml-base-compiler` (OCaml compiler)
 #. :bash:`opam install num ocamlfind merlin user-setup` (OCaml libraries needed for compilation and development)
 #. :bash:`opam user-setup install` (configuring Merlin)
@@ -181,9 +181,15 @@ Term
 Contains functions for decomposing and recomposing lambdas, products,
 and arities.
 
+Pretyping
+"""""""""
+* :ocaml:`search_guard`: Guard-checking entry point for fixpoints.
+  Used by other functions to "guess" the recursive indices of fixpoints.
+
 Other
 -----
 * If the dependencies of ``kernel/declarations.ml`` are changed,
   e.g. adding a new field to a variant in :ocaml:`Constr.constr`,
   changes may be needed in ``checker/values.ml``,
   e.g. in :ocaml:`Values.v_constr`. Failure to make the necessary changes may result in mysterious segfaults.
+* Changes to :ocaml:`Constr.constr` need to be reflected in the hashing functions in :ocaml:`Constr`.
