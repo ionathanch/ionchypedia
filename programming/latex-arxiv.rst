@@ -10,6 +10,8 @@ uploading LaTeX files created in Overleaf. There are probably more proper ways
 to fix them.
 See `Considerations for TeX Submissions <https://export.arxiv.org/help/submit_tex>`__
 and `Common Mistakes <https://arxiv.org/help/faq/mistakes>`__ for other errors.
+See also `this README <https://github.com/PSTC/pstc-arxiv/blob/master/README.md>`__
+for more details on building (especially when using `acmart`) and submitting to arXiv.
 
 .. list-table::
   :widths: auto

@@ -2,6 +2,9 @@
 Arch Package Managers
 =====================
 
+.. role:: bash(code)
+  :language: bash
+
 Pacman
 ------
 

@@ -21,11 +21,14 @@ Changing the greeter
 ^^^^^^^^^^^^^^^^^^^^
 
 #. Install and set up the greeter
-    - LightDM GTK+ Greeter: Use ``lightdm-gtk-greeter-settings``
-    - Slick Greeter: Use ``lightdm-settings``
+
+   - LightDM GTK+ Greeter: Use ``lightdm-gtk-greeter-settings``
+   - Slick Greeter: Use ``lightdm-settings``
+
 #. Set :cfg:`greeter-session={lightdm-gtk-greeter,slick-greeter,...}`
    under :cfg:`[Seat:*]` in ``/etc/lightdm/lightdm.conf``
    (see `here <https://github.com/CanonicalLtd/lightdm/blob/master/data/lightdm.conf>`__ for more configuration settings)
+
 #. Use :bash:`sudo systemctl restart lightm` to reload greeter,
    :bash:`dm-tool switch-to-greeter` to see the greeter after making
    configuration changes

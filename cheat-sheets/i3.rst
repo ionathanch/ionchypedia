@@ -1,0 +1,73 @@
+==============
+i3 Keybindings
+==============
+
+These are all prefixed with `$mod`.
+
+Notation:
+
+* Capitalization: Shift
+* ``^``: CTRL
+* \*: custom keybindings
+
+Basics
+------
+
+================= =======
+Effect            Command
+================= =======
+Terminal          enter
+Reload i3 configs C
+Restart i3        R
+Lock screen       ^L\*
+System mode       0
+================= =======
+
+
+Windowing
+---------
+
+=============== =======
+Effect          Command
+=============== =======
+Close           q\*
+Tile down       v
+Tile right      h
+Split           e
+Stack           s
+Tab             w
+Float           Space
+Fullscreen      f
+Cycle workspace b
+Workspace #n    #n
+Move to #n      #N
+Focus parent    a
+Focus left      ←
+Focus down      ↓
+Focus up        ↑
+Focus right     →
+Focus float     space
+Move left       ⇐
+Move down       ⇓
+Move up         ⇑
+Move right      ⇒
+Move workspace  B
+Move scratchpad _
+Show scratchpad \-
+=============== =======
+
+Applications
+------------
+
+============== =======
+Application    Command
+============== =======
+Launcher       d
+Menu           z
+Audio          ^m
+Capture area   print
+Capture window Print
+Browser        f2
+File manager   f3
+Music          f5
+============== =======

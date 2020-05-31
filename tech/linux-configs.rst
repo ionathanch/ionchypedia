@@ -118,16 +118,16 @@ Disabling Middle-Click Paste
 ----------------------------
 From https://unix.stackexchange.com/a/277488:
 
-1. Install ``xsel``, ``xbindkeys``, ``xdotool``
-2. In ``~/.xbindkeysrc``, insert
+#. Install ``xsel``, ``xbindkeys``, ``xdotool``
+#. In ``~/.xbindkeysrc``, insert
 
-  .. code:: bash
+   .. code:: bash
 
-    "echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"
-    b:2 + Release
+     "echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"
+     b:2 + Release
 
-3. In ``~/.profile``, insert :bash:`xbindkeys`
-4. :bash:`source ~/.profile`
+#. In ``~/.profile``, insert :bash:`xbindkeys`
+#. :bash:`source ~/.profile`
  
 Customizations for Xubuntu
 --------------------------

@@ -57,7 +57,7 @@ To highlight an inline snippet in, for instance, Bash, register a new role:
 
 Then use the role ``:bash:`echo "like this"```. More information on roles can be found `here <http://docutils.sourceforge.net/docs/ref/rst/roles.html>`__.
 
-To highlight a code snippet, use the ``code`` directive: ::
+To highlight a code snippet, use the ``code`` directive:
 
 .. code:: rst
 
@@ -108,3 +108,13 @@ The logo on the front-page README is inserted by the following: ::
   .. image:: ionchypedia.png
     :alt: i⚛️nchypedia in rainbow text over a black background
     :width: 100%
+
+Newlines
+--------
+Use the following directive in order to use ``|br|`` to insert newlines:
+
+.. code:: rst
+
+  .. |br| raw:: html
+
+    <br/>

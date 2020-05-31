@@ -31,7 +31,7 @@ Pages
 
 .. toctree::
   :maxdepth: 3
-  :caption: Tech Notes and Tips
+  :caption: Tech Notes and Configs
 
   tech/firefox-configs
   tech/linux-configs
@@ -43,6 +43,7 @@ Pages
   :caption: Cheat Sheets
 
   cheat-sheets/arch
+  cheat-sheets/i3
   cheat-sheets/jekyll
   cheat-sheets/rst
 
