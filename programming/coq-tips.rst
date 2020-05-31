@@ -16,7 +16,7 @@ Setup
 
 #. :bash:`sudo apt install opam` (OCaml package manager)
 #. :bash:`opam init && opam switch create ocaml-base-compiler` (OCaml compiler)
-#. :bash:`opam install num ocamlfind merlin user-setup` (OCaml libraries needed for compilation and development)
+#. :bash:`opam install num ocamlfind ounit merlin user-setup` (OCaml libraries needed for compilation and development)
 #. :bash:`opam user-setup install` (configuring Merlin)
 #. For VSCode, use the `OCaml and Reason IDE <https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml>`_ by Darin Morrison
 

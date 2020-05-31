@@ -1,9 +1,9 @@
-=====================
-reStructuredText Tips
-=====================
+================
+reStructuredText
+================
 
-Cheat sheets
-------------
+Other cheat sheets
+------------------
 * https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
 * http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt
 

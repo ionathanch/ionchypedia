@@ -1,6 +1,6 @@
-===========
-Jekyll Tips
-===========
+======
+Jekyll
+======
 
 .. role:: md(code)
   :language: md

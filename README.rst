@@ -11,8 +11,8 @@ Pages
 =====
 
 .. toctree::
-  :maxdepth: 5
-  :caption: Server administration for Thulium
+  :maxdepth: 2
+  :caption: Server Admin for Thulium
 
   thulium/static-ip
   thulium/ssh
@@ -22,17 +22,15 @@ Pages
   thulium/backup
 
 .. toctree::
-  :maxdepth: 5
-  :caption: Coding and programming
+  :maxdepth: 2
+  :caption: Coding and Programming
 
-  programming/rst
-  programming/jekyll
   programming/coq-tips
   programming/latex-arxiv
   programming/miscellaneous
 
 .. toctree::
-  :maxdepth: 5
+  :maxdepth: 3
   :caption: Tech Notes and Tips
 
   tech/firefox-configs
@@ -42,8 +40,15 @@ Pages
 
 .. toctree::
   :maxdepth: 2
+  :caption: Cheat Sheets
+
+  cheat-sheets/arch
+  cheat-sheets/jekyll
+  cheat-sheets/rst
+
+.. toctree::
+  :maxdepth: 2
   :caption: Uncategorized
 
   uncategorized/travel
-  uncategorized/media
   uncategorized/cantonese
