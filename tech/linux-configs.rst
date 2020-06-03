@@ -119,7 +119,7 @@ Change and add the following (:bash:`$mod+Shift+c` to reload):
 
 ``.i3status.conf``
 ^^^^^^^^^^^^^^^^^^
-Copy from ``/etc/i3/i3status.conf``. Refer to the `man page <https://i3wm.org/i3status/manpage.html>`_ and to `strftime <https://strftime.org/>`_ for time format strings. Use :bash:`$mod+Shift+r` to reload.
+Copy from ``/etc/i3status.conf``. Refer to the `man page <https://i3wm.org/i3status/manpage.html>`_ and to `strftime <https://strftime.org/>`_ for time format strings. Use :bash:`$mod+Shift+r` to reload.
 
 Disabling Middle-Click Paste
 ----------------------------
