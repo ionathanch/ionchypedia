@@ -116,6 +116,9 @@ Change and add the following (:bash:`$mod+Shift+c` to reload):
   # set natural scrolling
   # use `xinput list` to list devices
   exec --no-startup-id xinput --set-prop "Elan Touchpad" "libinput Natural Scrolling Enabled" 1
+  
+  # open file manager in floating mode
+  for_window [class="Pcmanfm"] floating enable
 
 ``.i3status.conf``
 ^^^^^^^^^^^^^^^^^^
