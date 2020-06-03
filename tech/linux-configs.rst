@@ -99,16 +99,23 @@ Change and add the following (:bash:`$mod+Shift+c` to reload):
 
   bindsym $mod+q kill                                                 # close window
   # bindsym $mod+q split toggle                                       # I use $mod+h/+v anyway
-  bindsym $mod+F2 exec firefox-developer-edition                      # replace Pale Moon
+  bindsym $mod+F2 exec firefox-developer-edition                       # replace Pale Moon
   bindsym $mod+Print --release exec --no-startup-id i3-scrot -s       # select area by default
   bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -w # capture window on Shift
   focus_follows_mouse no                                              # click to focus window
+
   # arrange monitors correctly on startup
   # use `xrandr -q` to list monitors
   # this should go in /etc/lightdm/lightdm.conf
   # under `display-setup-script` as well
   exec --no-startup-id xrandr --output HDMI-1 --primary --auto --left-of DVI-I-1
+
+  # start IBus on startup
   exec --no-startup-id ibus-daemon -drx
+
+  # set natural scrolling
+  # use `xinput list` to list devices
+  exec --no-startup-id xinput --set-prop "Elan Touchpad" "libinput Natural Scrolling Enabled" 1
 
 ``.i3status.conf``
 ^^^^^^^^^^^^^^^^^^
