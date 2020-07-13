@@ -186,5 +186,5 @@ Installed Programs
 * ``source-code-pro-fonts``, ``otf-fira-code``, ``noto-fonts-cjk``, ``noto-fonts-emoji``
 * ``manjaro-printer``, ``system-config-printer``
 * ``ibus``, ``ibus-libpinyin``
-* ``neofetch``, ``lm_sensors``, ``lightdm-settings``
+* ``neofetch``, ``lm_sensors``, ``lightdm-settings``, ``earlyoom``
 * ``minecraft-launcher`` (AUR), ``steam-manjaro``
