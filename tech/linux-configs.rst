@@ -183,8 +183,8 @@ Installed Programs
 * ``firefox-developer-edition`` (removed ``palemoon-bin``)
 * ``gvim`` (replaced ``vim``), ``code`` (removed ``mousepad``), ``racket``
 * ``texlive-most`` (``-core``, ``-bibtexextra``, ``-latexextra``, ``-fontsextra``, ``-science``), ``tllocalmgr-git`` (AUR)
-* ``source-code-pro-fonts``, ``otf-fira-code``, ``noto-fonts-cjk``, ``noto-fonts-emoji``
+* ``source-code-pro-fonts``, ``ttf-fira-code``, ``noto-fonts-cjk``, ``noto-fonts-emoji``
 * ``manjaro-printer``, ``system-config-printer``
-* ``ibus``, ``ibus-libpinyin``
+* ``ibus``, ``ibus-libpinyin``, ``ibus-table-others`` (AUR)
 * ``neofetch``, ``lm_sensors``, ``lightdm-settings``, ``earlyoom``
 * ``minecraft-launcher`` (AUR), ``steam-manjaro``
