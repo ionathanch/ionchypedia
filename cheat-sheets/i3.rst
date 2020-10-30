@@ -2,7 +2,7 @@
 i3 Keybindings
 ==============
 
-These are all prefixed with `$mod`.
+These are all prefixed with ``$mod``.
 
 Notation:
 
