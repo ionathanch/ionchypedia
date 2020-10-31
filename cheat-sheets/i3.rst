@@ -14,10 +14,10 @@ Basics
 ------
 
 ================= =======
-Effect             Command
+Effect            Command
 ================= =======
 Terminal          enter
-Reload i3 configs  C
+Reload i3 configs C
 Restart i3        R
 Lock screen       9
 System mode       0
@@ -28,7 +28,7 @@ Windowing
 ---------
 
 =============== =======
-Effect           Command
+Effect          Command
 =============== =======
 Close           q\*
 Tile down       v
@@ -46,7 +46,7 @@ Focus left      ←
 Focus down      ↓
 Focus up        ↑
 Focus right     →
-Focus float      space
+Focus float     space
 Move left       ⇐
 Move down       ⇓
 Move up         ⇑
