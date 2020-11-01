@@ -99,10 +99,15 @@ Change and add the following (:bash:`$mod+Shift+c` to reload):
 
   bindsym $mod+q kill                                                 # close window
   # bindsym $mod+q split toggle                                       # I use $mod+h/+v anyway
-  bindsym $mod+F2 exec firefox-developer-edition                       # replace Pale Moon
+  bindsym $mod+F2 exec firefox-developer-edition                      # replace Pale Moon
   bindsym $mod+Print --release exec --no-startup-id i3-scrot -s       # select area by default
   bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -w # capture window on Shift
   focus_follows_mouse no                                              # click to focus window
+
+  # audio settings
+  # use `pactl list sinks short` to list sinks
+  bindsym $mod+Ctrl+m exec pavucontrol
+  bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
 
   # arrange monitors correctly on startup
   # use `xrandr -q` to list monitors
@@ -139,6 +144,16 @@ From https://unix.stackexchange.com/a/277488:
 
 #. In ``~/.profile``, insert :bash:`xbindkeys`
 #. :bash:`source ~/.profile`
+
+``/etc/pulse/client.conf``
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Uncomment out the following to start PulseAudio on boot:
+
+.. code:: ini
+
+  autospawn = yes
+  daemon-binary = /usr/bin/pulseaudio
+  extra-arguments = --log-target=syslog
  
 Customizations for Xubuntu
 --------------------------
@@ -186,5 +201,5 @@ Installed Programs
 * ``source-code-pro-fonts``, ``ttf-fira-code``, ``noto-fonts-cjk``, ``noto-fonts-emoji``
 * ``manjaro-printer``, ``system-config-printer``
 * ``ibus``, ``ibus-libpinyin``, ``ibus-table-others`` (AUR)
-* ``neofetch``, ``lm_sensors``, ``lightdm-settings``, ``earlyoom``
+* ``neofetch``, ``lm_sensors``, ``lightdm-settings``, ``earlyoom``, ``pulseaudio``
 * ``minecraft-launcher`` (AUR), ``steam-manjaro``
