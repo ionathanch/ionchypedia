@@ -130,6 +130,16 @@ Change and add the following (:bash:`$mod+Shift+c` to reload):
 ^^^^^^^^^^^^^^^^^^
 Copy from ``/etc/i3status.conf``. Refer to the `man page <https://i3wm.org/i3status/manpage.html>`_ and to `strftime <https://strftime.org/>`_ for time format strings. Use :bash:`$mod+Shift+r` to reload.
 
+``/etc/pulse/client.conf``
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Uncomment out the following to start PulseAudio on boot:
+
+.. code:: ini
+
+  autospawn = yes
+  daemon-binary = /usr/bin/pulseaudio
+  extra-arguments = --log-target=syslog
+
 Disabling Middle-Click Paste
 ----------------------------
 From https://unix.stackexchange.com/a/277488:
@@ -144,16 +154,6 @@ From https://unix.stackexchange.com/a/277488:
 
 #. In ``~/.profile``, insert :bash:`xbindkeys`
 #. :bash:`source ~/.profile`
-
-``/etc/pulse/client.conf``
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-Uncomment out the following to start PulseAudio on boot:
-
-.. code:: ini
-
-  autospawn = yes
-  daemon-binary = /usr/bin/pulseaudio
-  extra-arguments = --log-target=syslog
  
 Customizations for Xubuntu
 --------------------------
