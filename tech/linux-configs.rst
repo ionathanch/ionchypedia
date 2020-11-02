@@ -140,6 +140,15 @@ Uncomment out the following to start PulseAudio on boot:
   daemon-binary = /usr/bin/pulseaudio
   extra-arguments = --log-target=syslog
 
+``/etc/pulse/default.pa``
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Use :bash:`aplay -l` to list devices and :bash:`aplay -D plughw:c,d /usr/share/sounds/alsa/Noise.wav` to test card ``c``, device ``d``.
+Add the following to enable playback through the given device.
+
+.. code:: ini
+
+  load-module module-alsa-sink device=hw:c,d
+
 Disabling Middle-Click Paste
 ----------------------------
 From https://unix.stackexchange.com/a/277488:
