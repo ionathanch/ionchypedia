@@ -5,6 +5,9 @@ Linux Customizations and Configurations
 .. role:: bash(code)
   :language: bash
 
+.. role:: json(code)
+  :language: json
+
 I frequently forget the various customizations I configure after setting up a distro installation, so this time around I've finally compiled a list.
 
 Configuration Files
@@ -148,6 +151,18 @@ Add the following to enable playback through the given device.
 .. code:: ini
 
   load-module module-alsa-sink device=hw:c,d
+
+``/usr/lib/code/product.json``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The open-source version of Visual Studio Code uses a different extensions gallery.
+To restore it to the usual gallery, in this file, replace the ``extensionsGallery`` object:
+
+.. code:: json
+
+  "extensionsGallery": {
+    "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+    "itemUrl": "https://marketplace.visualstudio.com/items"
+  }
 
 Disabling Middle-Click Paste
 ----------------------------
