@@ -17,6 +17,9 @@ Maintenance and Configuration
 .. role:: ruby(code)
   :language: ruby
 
+.. role:: sql(code)
+  :language: sql
+
 General
 -------
 .. list-table::
@@ -81,6 +84,10 @@ Nextcloud
     - Add :php:`'overwriteprotocol' => 'https' in config/config.php` to :php:`$CONFIG` array in ``config/config.php``
   * - Running an :php:`occ` command
     - :bash:`docker exec -u www-data nextcloud php occ $command`
+  * - Manually removing file locks
+    - 1. :bash:`sudo su` to root and :bash:`sqlite3 data/owncloud.db`
+      2. :sql:`DELETE FROM oc_file_locks WHERE lock=-1;`
+      3. CTRL-d or :sql:`.quit` to leave SQLite and :bash:`exit` to leave root
 
 Ghost
 -----
