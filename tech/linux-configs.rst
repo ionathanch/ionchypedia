@@ -214,8 +214,10 @@ Removed
 * gnome-mines, gnome-sudoku, sgt-puzzles
 * simple-scan, mate-calc-common, gnome-font-viewer
 
-Customizations for Manjaro i3
------------------------------
+Customizations for Manjaro
+--------------------------
+
+The below are for both the i3 and KDE Plasma DEs, unless otherwise specified.
 
 Installed Programs
 ^^^^^^^^^^^^^^^^^^
@@ -225,5 +227,6 @@ Installed Programs
 * ``source-code-pro-fonts``, ``ttf-fira-code``, ``noto-fonts-cjk``, ``noto-fonts-emoji``
 * ``manjaro-printer``, ``system-config-printer``
 * ``ibus``, ``ibus-libpinyin``, ``ibus-table-others`` (AUR)
-* ``neofetch``, ``lm_sensors``, ``lightdm-settings``, ``earlyoom``, ``pulseaudio``
-* ``minecraft-launcher`` (AUR), ``steam-manjaro``
+* ``neofetch``, ``lm_sensors``, ``lightdm-settings``, ``earlyoom``, ``pulseaudio``, ``networkmanager``
+* ``minecraft-launcher`` (AUR), ``steam-manjaro``, ``zoom`` (AUR)
+* ``plasma-desktop``, ``kmix``, ``kscreen``, ``kimtoy``, ``powerdevil``, ``bluedevil``, ``plasma-nm``, ``spectacle`` (for KDE Plasma)
